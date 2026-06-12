@@ -47,8 +47,8 @@ async def ask_agent(request: Request):
 @app.get("/health")
 def health():
     """
-    Render sẽ check endpoint này định kỳ.
-    Trả về 200 = healthy. Non-200 = Render sẽ restart container.
+    Render will check this endpoint periodically.
+    Return 200 = healthy. Non-200 = Render may restart the container.
     """
     return {
         "status": "ok",
@@ -59,7 +59,7 @@ def health():
 
 
 if __name__ == "__main__":
-    # ✅ Render cung cấp biến môi trường PORT — đọc từ env
+    # ✅ Render provides PORT env var — read from env
     port = int(os.getenv("PORT", 8000))
     print(f"Starting on port {port} (from PORT env var)")
     uvicorn.run(app, host="0.0.0.0", port=port)

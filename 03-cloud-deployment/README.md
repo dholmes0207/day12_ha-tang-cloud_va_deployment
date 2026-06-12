@@ -10,23 +10,22 @@
 
 ---
 
-## railway/ — Deploy < 5 Phút
+## render/ — Deploy < 5 Phút
 
-Không cần server config. Kết nối GitHub → Auto deploy.
+Blueprint IaC: commit `render/render.yaml` → Render tự deploy từ GitHub.
 
 ```
-railway/
-├── railway.toml        # Railway config
-├── Procfile            # Define start command
-├── app.py              # Agent (Railway-ready)
+render/
+├── render.yaml         # Render blueprint
+├── app.py              # Agent (Render-ready)
 └── requirements.txt
 ```
 
-### Các bước deploy Railway:
-1. `railway login` (hoặc qua browser)
-2. `railway init`
-3. `railway up`
-4. Nhận URL dạng `https://your-app.up.railway.app`
+### Các bước deploy Render:
+1. Push code lên GitHub
+2. Render Dashboard → New → Blueprint
+3. Chọn repo và confirm (Render đọc `render/render.yaml`)
+4. Review và Deploy
 
 ---
 
