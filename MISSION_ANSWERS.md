@@ -1,5 +1,11 @@
 # Day 12 Lab - Mission Answers
 
+> **Student Name:** Lưu Tiến Duy
+> **Student ID:** 2A202600729  
+> **Date:** 12-06-2026
+
+---
+
 ## Part 1: Localhost vs Production
 
 ### Exercise 1.1: Anti-patterns found

@@ -39,13 +39,17 @@ services:
     #   mountPath: /data
     #   sizeGB: 1
 
-  # ──────────────────────────────────────
+ # ──────────────────────────────────────
   # Redis (dùng Render Redis add-on)
   # ──────────────────────────────────────
   - type: redis
     name: agent-cache
     plan: free
     maxmemoryPolicy: allkeys-lru
+    # --- PHẦN BỔ SUNG ĐỂ SỬA LỖI ---
+    ipAllowList:
+      - source: 0.0.0.0/0
+        description: "Allow all connections"
 
 # ============================================================
 # Cách deploy:
