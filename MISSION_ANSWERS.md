@@ -39,8 +39,8 @@
 ## Part 3: Cloud Deployment
 
 ### Exercise 3.1: Railway deployment
-- URL: https://day12-agent.up.railway.app
-- Screenshot: [Link to screenshot in repo]
+- URL: https://ai-agent-b9yl.onrender.com/
+- Screenshot: 03-cloud-deployment/render-screen.png
 
 ## Part 4: API Security
 
